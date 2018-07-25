@@ -95,3 +95,95 @@ GET http://{{host}}/api/stores/nearby
   &distance=5000
 x-access-token: {{token}} 
 ```
+
+### Response Example
+
+```json
+{
+  "records": 4,
+  "stores": [
+    {
+      "_id": "5b58765f69599308f17c6efe",
+      "name": "asd Woolwich - Powis Street ude",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          0.07,
+          51.47
+        ]
+      },
+      "__v": 0,
+      "address": [
+        {
+          "street": "32, POWIS STREET",
+          "city": "Woolwich",
+          "province": "ENG",
+          "zipcode": "SE18 6LF",
+          "_id": "5b58765f69599308f17c6eff"
+        }
+      ]
+    },
+    {
+      "_id": "5b58767069599308f17c6f00",
+      "name": "asd Woolwich - Powis Street ude",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          0.07,
+          51.47
+        ]
+      },
+      "__v": 0,
+      "address": [
+        {
+          "street": "32, POWIS STREET",
+          "city": "Woolwich",
+          "province": "ENG",
+          "zipcode": "SE18 6LF",
+          "_id": "5b58767069599308f17c6f01"
+        }
+      ]
+    },
+    {
+      "_id": "5b570782dcfa5a13afe5e318",
+      "name": "Woolwich - Powis Street",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          0.07,
+          51.49
+        ]
+      },
+      "__v": 0,
+      "address": [
+        {
+          "zipcode": "SE18 6LF",
+          "province": "ENG",
+          "city": "Woolwich",
+          "street": "32, POWIS STREET"
+        }
+      ]
+    },
+    {
+      "_id": "5b570782dcfa5a13afe5e1cc",
+      "name": "London - Greenwich Shopping Park",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          0.02,
+          51.49
+        ]
+      },
+      "__v": 0,
+      "address": [
+        {
+          "zipcode": "SE7 7ST",
+          "province": "ENG",
+          "city": "London",
+          "street": "Unit D, 1C Greenwich Shopping Park, Bugsbys Way, Charlton"
+        }
+      ]
+    }
+  ]
+}
+```
