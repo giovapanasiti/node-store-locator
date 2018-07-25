@@ -1,12 +1,15 @@
-GET http://localhost:3000/api/stores/nearby
+@host = localhost:3000
+@token = xxxxxxx
+
+GET http://{{host}}/api/stores/nearby
   ?lat=51.47
   &lng=0.07
   &distance=5000
-x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjViNTg1OTBhMzhhMDM5ZjBiYWZhNDNmNCIsImlhdCI6MTUzMjUxNjY3OCwiZXhwIjoxNTMyNjAzMDc4fQ.Pvp3IGUTY1QstzU2DE-q0Xn-CtBw6lDNSp00opu6ElQ
+x-access-token: {{token}} 
 
 ###
 
-POST http://localhost:3000/api/auth/register
+POST http://{{host}}/api/auth/register
 content-type: application/json
 
 {
@@ -17,7 +20,7 @@ content-type: application/json
 
 
 ###
-POST http://localhost:3000/api/auth/login
+POST http://{{host}}/api/auth/login
 content-type: application/json
 
 {
@@ -28,9 +31,9 @@ content-type: application/json
 
 ###
 
-POST http://localhost:3000/api/stores/ 
+POST http://{{host}}/api/stores/ 
 content-type: application/json
-x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjViNTg1OTBhMzhhMDM5ZjBiYWZhNDNmNCIsImlhdCI6MTUzMjUxNjY3OCwiZXhwIjoxNTMyNjAzMDc4fQ.Pvp3IGUTY1QstzU2DE-q0Xn-CtBw6lDNSp00opu6ElQ
+x-access-token: {{token}} 
 
 {
   "name": "Woolwich - Powis Street",
